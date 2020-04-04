@@ -38,6 +38,126 @@
     <p class="caption"> This is a caption</p>
 ```
 
+## グリッドシステム と ボタン
+
+```
+    <v-container fluid class="my-5">
+      <v-layout row wrap>
+      <v-flex xs12 md6>
+        <v-btn outlined block class="primary">1</v-btn>
+      </v-flex>
+      <v-flex xs4 md2>
+        <v-btn outlined block class="primary">2</v-btn>
+      </v-flex>
+      <v-flex xs4 md2>
+        <v-btn outlined block class="primary">2</v-btn>
+      </v-flex>
+      <v-flex xs4 md2>
+        <v-btn outlined block class="primary">2</v-btn>
+      </v-flex>
+    </v-layout>
+
+    <v-layout row wrap justify-space-around>
+      <v-flex xs4 md3>
+        <v-btn outlined block color="success">1</v-btn>
+      </v-flex>
+      <v-flex xs4 md3>
+        <v-btn outlined block class="success">2</v-btn>
+      </v-flex>
+    </v-layout>
+  </v-container>
+```
+
+## vuetify@1.5.v → 2.2.20
+
+|修正前|修正後|
+|---|:---:|
+|v-list-tile|v-list-item|
+|v-list-tile-content|v-list-item-content|
+|v-list-tile-action|v-list-item-action|
+|v-btn flat|v-btn text|
+|slot="activator"|template v-slot:activator="{ on }"|
+
+## アイコン と ツールチップ
+
+```
+    <v-tooltip bottom>
+      <template v-slot:activator="{ on }">
+        <v-btn color="primary" dark v-on="on">Button</v-btn>
+      </template>
+      <span>Button</span>
+    </v-tooltip>  
+```
+
+## アバター 
+
+```
+    <v-responsive class="pt-4">
+      <v-avatar size="100" class="grey lighen-2">
+        <img :src="person.avatar">
+      </v-avatar>
+    </v-responsive>
+```
+
+## パネル
+
+```
+    <v-expansion-panels>
+      <v-expansion-panel
+        v-for="(item,i) in 5"
+        :key="i"
+      >
+      <v-expansion-panel-header>Item</v-expansion-panel-header>
+      <v-expansion-panel-content>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+  </v-expansion-panels>
+```
+
+## メニューバー
+
+```
+    <v-menu offset-y>
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn text color="grey" v-on="on" v-bind="attrs">
+          <v-icon left>mdi-chevron-down</v-icon>
+          <span>Menu</span>
+        </v-btn>
+      </template>
+
+      <v-list>
+        <v-list-item v-for="link in links" :key="link.text" router :to="link.route">
+          <v-list-item-title>{{ link.text }}</v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-menu>
+```
+
+## モーダル
+
+```
+    <v-dialog max-width="600px">
+      <template v-slot:activator="{ on }">
+        <v-btn text class="success" v-on="on">Add new project</v-btn>
+      </template>
+
+      <v-card>
+        <v-card-title>
+          <h2>Add a new Project</h2>
+        </v-card-title>
+
+        <v-card-text>
+          <v-form class="px-3">
+            <v-text-field label="Title" v-model="title"></v-text-field>
+            <v-textarea label="Information" v-model="content"></v-textarea>
+          </v-form>
+        </v-card-text>
+
+      </v-card>
+    </v-dialog>
+```
+
 ## Project setup
 ```
 yarn install
