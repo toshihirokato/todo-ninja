@@ -1,7 +1,8 @@
 <template>
   <v-app class="grey lighten-4">
     <Navbar />
-    <v-content>
+    <!-- Vuetify 公式ドキュメント https://vuetifyjs.com/ja/styles/spacing/ -->
+    <v-content class="mx-4 mb-4">
       <router-view></router-view>
     </v-content>
   </v-app>
