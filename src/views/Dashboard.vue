@@ -75,6 +75,9 @@ export default {
 </script>
 
 <style>
+/* .theme--dark.v-chip:not(.v-chip--active) {
+    background: initial;
+} */
 .project.complete {
   border-left: 4px solid #3cd1c2;
 }
@@ -85,12 +88,12 @@ export default {
   border-left: 4px solid #f83e70;
 }
 .v-chip.complete {
-  background: #3cd1c2;
+  background: #3cd1c2 !important;
 }
 .v-chip.ongoing {
-  background: #ffaa2c;
+  background: #ffaa2c !important;
 }
 .v-chip.overdue {
-  background: #f83e70;
+  background: #f83e70 !important;
 }
 </style>
