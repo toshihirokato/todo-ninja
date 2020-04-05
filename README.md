@@ -1,6 +1,6 @@
-#  Vuetify を用いて Todoアプリを作成
+#  <font color=#108ee9>Vuetify を用いて Todoアプリを作成</font>
 
-## アイコン と ボタン
+## <font color=#108ee9>アイコン と ボタン</font>
 ```
     <v-btn class="pink white--text">click me</v-btn>
     <v-btn depressed color="pink">click me</v-btn>
@@ -26,7 +26,7 @@
     </v-btn>
 ```
 
-## テキスト と カラー
+## <font color=#108ee9>テキスト と カラー</font>
 
 ```
     <p class="red white--text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste illo, eaque voluptate at ab, corporis et obcaecati ducimus, sunt excepturi aperiam? Nisi animi obcaecati modi sed consectetur voluptas non nam.</p>
@@ -38,7 +38,7 @@
     <p class="caption"> This is a caption</p>
 ```
 
-## グリッドシステム と ボタン
+## <font color=#108ee9>グリッドシステム と ボタン</font>
 
 ```
     <v-container fluid class="my-5">
@@ -78,7 +78,7 @@
 |v-btn flat|v-btn text|
 |slot="activator"|template v-slot:activator="{ on }"|
 
-## アイコン と ツールチップ
+## <font color=#108ee9>アイコン と ツールチップ</font>
 
 ```
     <v-tooltip bottom>
@@ -89,7 +89,7 @@
     </v-tooltip>  
 ```
 
-## アバター 
+## <font color=#108ee9>アバター</font>
 
 ```
     <v-responsive class="pt-4">
@@ -99,7 +99,7 @@
     </v-responsive>
 ```
 
-## パネル
+## <font color=#108ee9>パネル</font>
 
 ```
     <v-expansion-panels>
@@ -115,7 +115,7 @@
   </v-expansion-panels>
 ```
 
-## メニューバー
+## <font color=#108ee9>メニューバー</font>
 
 ```
     <v-menu offset-y>
@@ -134,7 +134,7 @@
     </v-menu>
 ```
 
-## モーダル
+## <font color=#108ee9>モーダル</font>
 
 ```
     <v-dialog max-width="600px">
@@ -158,7 +158,7 @@
     </v-dialog>
 ```
 
-## main.js にて firebase を設定
+## <font color=#108ee9>main.js にて firebase を設定</font>
 
 ```
     import firebase from 'firebase/app'
