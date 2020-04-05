@@ -158,6 +158,30 @@
     </v-dialog>
 ```
 
+## main.js にて firebase を設定
+
+```
+    import firebase from 'firebase/app'
+    import 'firebase/firestore'
+
+    const firebaseConfig = {
+      apiKey: "",
+      authDomain: "",
+      databaseURL: "",
+      projectId: "",
+      storageBucket: "",
+      messagingSenderId: "",
+      appId: ""
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig)
+    const db = firebase.firestore()
+
+    export default db
+
+```
+
 ## Project setup
 ```
 yarn install
