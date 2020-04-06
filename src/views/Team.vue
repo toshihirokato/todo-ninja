@@ -41,7 +41,7 @@ export default {
         { name: 'The Net Ninja', role: 'Web developer', avatar: '/ninja.jpeg' },
         { name: 'Ryu', role: 'Graphic designer', avatar: '/ryu.jpeg' },
         { name: 'Chun Li', role: 'Web developer', avatar: '/chun.jpeg' },
-        { name: 'Goukun', role: 'Social media maverick', avatar: '/gouken.jpg' },
+        { name: 'Goukun', role: 'Social media maverick', avatar: '/gouken.jpeg' },
         { name: 'Yoshi', role: 'Sales guru', avatar: '/yoshi.jpeg' },
       ]
     }
